@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+:root{
+  --clr-primary-100: hsl(0, 78%, 62%);
+  --clr-primary-200: hsl(180, 62%, 55%);
+  --clr-primary-300: hsl(34, 97%, 64%);
+  --clr-primary-700: hsl(212, 86%, 64%);
+
+  --clr-neutral-100: hsl(234, 12%, 34%);
+  --clr-neutral-800: hsl(229, 6%, 66%);
+  --clr-neutral-900: hsl(0, 0%, 98%);
+}
+
+body {
+  margin: auto;
+  background-color: var(--clr-neutral-900);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  /* width: 80%; */
+}
+
+.header{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+p{
+    color: var(--clr-neutral-800);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    /* margin: 0; */
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+h1, h2, h3{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--clr-neutral-100);
+}
+h1{
+  font-size: 53px;
+    font-weight: 600;
+    margin: 0;
+}
+h2{
+    font-weight: 200;
+    /* margin: 0; */
+    margin-top: 20px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  gap: 25px;
+  flex: 1;
+  /* border: 2px brown solid; */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.left,
+.top,
+.right,
+.bottom {
+  width: 400px;
+  height: 260px;
+  /* border: 2px brown solid; */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  box-shadow: -2px 4px 18px 0px rgba(46, 43, 233, 0.25);
+  border-radius: 10px;
+}
+.left{
+    border-top: 8px var(--clr-primary-200) solid;
+}
+
+.top{
+    border-top: 8px var(--clr-primary-100) solid;
+}
+
+.right{
+    border-top: 8px var(--clr-primary-700) solid;
+}
+
+.bottom{
+    border-top: 8px var(--clr-primary-300) solid;
+}
+
+img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media only screen and (max-width: 500px){
+  body{
+    padding-left: 20px;
+  }
+  .container{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .container section{
+    width: 100% !important;
+  }
+  p, h1, h2, h3{
+    width: 80%;
+  }
+}
